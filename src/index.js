@@ -15,7 +15,7 @@ const app = express()
 const server = http.createServer(app)
 const io = sockerio(server)
 
-const PORT = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 const publicPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicPath))
